@@ -6,7 +6,7 @@ export default function Index() {
   const animatedText = useTypewriter("Desarrollo web, aplicaciones web, Android, Servidores, Cloud, SRE.", 50);
 
   return (
-    <div className="h-[80vh] grid justify-items-center bg-slate-950 text-white overflow-hidden">
+    <div className="lg:h-[80vh] xs:h-[120vh] grid justify-items-center bg-slate-950 text-white overflow-hidden px-6">
 
 <motion.main
         className="flex-grow flex flex-col justify-center items-center text-center px-4 mt-[150px]"
@@ -25,16 +25,16 @@ export default function Index() {
         >
           {animatedText}
         </motion.p>
-        <div className="space-x-4">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <Link
             to="/servicios"
-            className="bg-white text-blue-600 px-6 py-3 rounded-full font-bold text-lg hover:bg-blue-100 transition duration-300"
+            className="bg-white text-blue-600 px-6 py-3 rounded-full font-bold text-base sm:text-lg hover:bg-blue-100 transition duration-300 w-full sm:w-auto text-center"
           >
             Nuestros Servicios
           </Link>
           <Link
             to="/contacto"
-            className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-blue-600 transition duration-300"
+            className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-blue-600 transition duration-300 w-full sm:w-auto text-center"
           >
             Contáctanos
           </Link>
