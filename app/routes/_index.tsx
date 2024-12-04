@@ -6,10 +6,10 @@ export default function Index() {
   const animatedText = useTypewriter("Desarrollo web, aplicaciones web, Android, Servidores, Cloud, SRE.", 50);
 
   return (
-    <div className="lg:h-[80vh] sm:h-[120vh] grid justify-items-center bg-slate-950 text-white overflow-hidden px-6">
+    <div className="lg:h-[80vh] sm:h-[100vh] grid justify-items-center bg-slate-950 text-white overflow-hidden px-6">
 
 <motion.main
-        className="flex-grow flex flex-col justify-center items-center text-center px-4 mt-[150px] lg:mt-[150px]"
+        className="flex-grow flex flex-col justify-center items-center text-center px-4 mt-[80px] sm:mt-[150px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
@@ -28,7 +28,7 @@ export default function Index() {
         <div className="flex flex-col sm:flex-col lg:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <Link
             to="/servicios"
-            className="bg-white text-blue-600 px-4 py-3 rounded-full font-bold text-base hover:bg-blue-100 transition duration-300 w-full sm:w-auto text-center"
+            className="bg-white text-blue-600 px-4 py-4 rounded-full font-bold text-base hover:bg-blue-100 transition duration-300 w-full sm:w-auto text-center"
           >
             Nuestros Servicios
           </Link>
