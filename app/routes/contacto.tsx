@@ -3,22 +3,18 @@ import { HiLocationMarker, HiPhone, HiMail } from "react-icons/hi";
 import { ImWhatsapp } from "react-icons/im";
 import Tecnologias from "~/components/Tecnologias";
 
-
-
 export default function Contacto() {
-
   return (
-    <div className="h-[80vh] bg-slate-950 text-white">
-
+    <div className=" bg-slate-950 text-white flex flex-col">
       <motion.main
-        className="max-w-4xl mx-auto px-4 pt-16"
+        className="flex-grow max-w-4xl mx-auto px-4 py-8 md:py-16 w-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">Contáctanos</h1>
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-8 text-center">Contáctanos</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -32,30 +28,20 @@ export default function Contacto() {
               </li>
               <li className="flex items-center">
                 <HiPhone className="mr-3 text-blue-400 text-xl" />
-                <a
-                  href="https://wa.me/573123456789"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-300 transition duration-300"
-                >
+                <a href="tel:+573503764821" className="hover:text-blue-300 transition duration-300">
                   +57 3503764821
                 </a>
               </li>
               <li className="flex items-center">
                 <HiMail className="mr-3 text-blue-400 text-xl" />
-                <a
-                  href="https://wa.me/573123456789"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-300 transition duration-300"
-                >
+                <a href="mailto:admin@heitic.com" className="hover:text-blue-300 transition duration-300">
                   admin@heitic.com
                 </a>
               </li>
               <li className="flex items-center">
                 <ImWhatsapp className="mr-3 text-blue-400 text-xl" />
                 <a
-                  href="https://wa.me/573123456789"
+                  href="https://wa.me/573503764821"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-300 transition duration-300"
@@ -86,9 +72,9 @@ export default function Contacto() {
             </div>
             <motion.button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition duration-300"
+              className="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition duration-300 md:w-auto"
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 1.95 }}
+              whileTap={{ scale: 0.95 }}
             >
               Enviar Mensaje
             </motion.button>
@@ -97,7 +83,6 @@ export default function Contacto() {
       </motion.main>
 
       <Tecnologias />
-
     </div>
   );
 }

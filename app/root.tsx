@@ -9,7 +9,6 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
-import { useEffect } from "react";
 import "./tailwind.css";
 
 export const links: LinksFunction = () => [
@@ -26,17 +25,6 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
-  useEffect(() => {
-    // Tawk.to Script
-    var s1 = document.createElement("script");
-    var s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/675070d44304e3196aec6d61/1ie93hg8h';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  }, []);
-
   
   return (
     <html lang="es">
